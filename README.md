@@ -31,7 +31,7 @@
 ## Architecture Overview
 
 <div align="center">
-  <img src="assets/architecture-diagram.png" alt="Architecture Diagram" width="800"/>
+  <img src="assets/architecture.png" alt="Architecture Diagram" width="800"/>
 </div>
 
 <br>
@@ -65,10 +65,7 @@ The solution consists of two main phases with three technical components:
 
 Before you begin, ensure you have:
 
-<div align="center">
-
 ### **Azure Services**
-</div>
 
 - Azure subscription with the following services:
   - Azure OpenAI Service
@@ -108,10 +105,7 @@ Store your credentials securely:
 
 To enable natural language querying of your data:
 
-<div align="center">
-
 #### **Enable Fabric Data Agent capabilities:**
-</div>
 
 1. Navigate to your Fabric tenant settings
 2. Enable the following settings:
@@ -120,10 +114,7 @@ To enable natural language querying of your data:
    - "Cross-geo processing for AI"
    - "Cross-geo storing for AI"
 
-<div align="center">
-
 #### **Create a Data Agent in Fabric (After you ran the notebook):**
-</div>
 
 1. In your Fabric workspace, click **New** → **Data Agent**
 2. Configure access to your data source
@@ -131,10 +122,7 @@ To enable natural language querying of your data:
 
 ### 4. Connect Fabric Data Agent to Azure AI Foundry
 
-<div align="center">
-
 #### **In Azure AI Foundry Portal:**
-</div>
 
 1. Navigate to your AI Foundry project
 2. Go to **Agents** → Create new agent
@@ -144,10 +132,7 @@ To enable natural language querying of your data:
    - Artifact ID from your Fabric Data Agent
    - Mark both as secrets
 
-<div align="center">
-
 #### **Configure the agent:**
-</div>
 
 - Select your deployment model (e.g., `gpt-4o-mini`)
 - Enable the Fabric tool for your agent
@@ -166,10 +151,7 @@ To enable natural language querying of your data:
 
 3. **Run the notebook cells sequentially:**
 
-<div align="center">
-
 #### **The crawling pipeline will:**
-</div>
 
 - Use Azure OpenAI's Responses API to connect to the MCP server
 - Navigate to target websites via the Playwright MCP server
@@ -192,10 +174,7 @@ Once data is crawled and stored in Fabric:
 2. **Connect it to Azure AI Foundry's AI Agent service**
 3. **Ask analytics questions** in natural language about your stored data
 
-<div align="center">
-
 #### **Example analytics queries:**
-</div>
 
 ```
 "How many blog entries were written in 2024?"
